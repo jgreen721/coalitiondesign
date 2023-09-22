@@ -1,0 +1,62 @@
+.schedule-card {
+  position: relative;
+  margin-left: var(--mainPaddingX);
+  overflow: hidden;
+}
+
+.schedule-card-content {
+  position: relative;
+  padding: 2rem;
+  width: 100%;
+}
+
+.schedule-card::before {
+  content: "";
+  position: absolute;
+  background: var(--white);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 75%;
+  border-radius: 0.5rem;
+}
+
+.schedule-h3 {
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 1px var(--white), 1px 1px 10px var(--white);
+}
+
+.date-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  width: 100%;
+  width: 300px;
+  animation: slide-right 1s var(--i) forwards;
+  transform: translateX(-100vw);
+  transition: 0.5s ease;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+.date-item .dark-text {
+  font-weight: 300;
+}
+
+.date-item:hover .dark-text {
+  font-weight: 800;
+}
+
+.padding-y {
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 550px) {
+  .date-item {
+    width: 225px;
+  }
+  .schedule-card {
+    margin-left: 0rem;
+    margin-top: 6rem;
+  }
+}

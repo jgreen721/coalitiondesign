@@ -1,0 +1,31 @@
+.team-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--darkblue);
+  padding: 1rem var(--mainPaddingX);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.darkblue-overlay {
+  position: relative;
+}
+
+.darkblue-overlay::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--darkblue);
+  opacity: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .desktop {
+    display: none;
+  }
+}

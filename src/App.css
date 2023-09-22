@@ -1,0 +1,79 @@
+.app {
+  max-width: 144rem;
+  margin: 0 auto;
+  font-family: var(--mainFont);
+}
+
+/* animations */
+
+@keyframes slide-up {
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.slide-right {
+  transform: translateX(-100vw);
+  animation: slide-right 1s var(--i) forwards;
+}
+
+@keyframes slide-right {
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+.slide-left {
+  transform: translateX(100vw);
+  animation: slide-left 1.5s 1.25s forwards;
+}
+
+@keyframes slide-left {
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes slide-up {
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  filter: blur(5px);
+  animation: fade-in 3s forwards;
+}
+
+@keyframes fade-in {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.scale-grow {
+  transform: scale(0);
+  animation: scale-grow 1s 0.25s forwards;
+}
+
+@keyframes scale-grow {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.drop-down {
+  transform: translateY(-100vh);
+  animation: drop-down 1s 0.5s forwards;
+}
+
+@keyframes drop-down {
+  100% {
+    transform: translateY(0vh);
+  }
+}

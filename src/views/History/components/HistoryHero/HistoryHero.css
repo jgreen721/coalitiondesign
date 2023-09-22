@@ -1,0 +1,49 @@
+.history-hero {
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 8rem);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.history-header-content {
+  /* display: flex; */
+  /* position: relative; */
+  /* z-index: 50; */
+  padding: 2rem var(--mainPaddingX);
+}
+
+.history-hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  background: var(--white);
+  opacity: 40%;
+}
+
+.flex-offset {
+  display: flex;
+}
+
+.no-opacity {
+  opacity: 0;
+}
+
+.history-p {
+  margin: 1rem;
+}
+
+.history-header-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.history-header-overlay-img {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,51 @@
+.team-header {
+  /* padding: 3rem var(--mainPaddingX); */
+  /* border: 1px solid black; */
+  position: relative;
+}
+
+.team-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  gap: 2rem;
+  padding: 3rem var(--mainPaddingX);
+}
+
+.team-header-blurb {
+  max-width: 600px;
+}
+
+.team-header-links-row {
+  background: var(--darkblue);
+  padding: 0rem var(--mainPaddingX);
+}
+
+.img-links {
+  display: flex;
+}
+
+.img-link-item {
+  color: var(--gray);
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background: transparent;
+  padding: 1rem;
+}
+
+.img-link-item:hover {
+  background: var(--gray);
+  color: var(--darkblue);
+}
+
+@media screen and (max-width: 1050px) {
+}
+@media screen and (max-width: 550px) {
+  .team-header-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem var(--mainPaddingX);
+  }
+}

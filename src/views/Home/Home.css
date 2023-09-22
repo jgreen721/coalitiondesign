@@ -1,0 +1,21 @@
+.home-container {
+  overflow: hidden;
+  perspective: 5px;
+  position: relative;
+  height: 100vh;
+}
+
+.section {
+  padding: 4.5rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  background: white;
+  /* z-index: 50; */
+  position: relative;
+}
+
+@media screen and (max-width: 1050px) {
+}
+
+@media screen and (max-width: 550px) {
+}

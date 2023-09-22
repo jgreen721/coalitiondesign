@@ -1,0 +1,42 @@
+.homelink-logo-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.homelink-logo-div {
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.homelink-logo-img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease-out;
+}
+
+.homelink-logo-div:hover .homelink-logo-img {
+  transform: scale(1.2) rotate(4deg);
+}
+
+.homelink-header-h3 {
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+.homelink-header-h3:nth-child(2) {
+  font-size: 3.4rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .homelink-header-h3:nth-child(2) {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .homelink-header-h3:nth-child(2) {
+    font-size: 2.5rem;
+  }
+}
